@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="../../Images/logo2.avif">
+    <title>Myntra | Buy Items</title>
+</head>
+<body id="body">
+    <div class="loader" id="loader">
+        <img src="../../Images/myntra.gif">
+    </div>
+    <div class="lost" id="lost">
+        <h1>Oops! No Internet</h1>
+        <h2>Check Your Internet Connection.</h2>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../Images/logo2.avif">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../About Us/index.html">About Us</a></li>
+                   
+                    <li><a href="#" class="activeLink">Buy Items</a></li>
+                    <li><a href="../Contact Us/index.html">Contact Us</a></li>
+                    <li class="menu"><img src="../../Images/menu.png" onclick="showhide()"></li>
+                </ul>
+            </div>
+            <div class="signup">
+                <a href="../SignUp/index.html"><span>Sign Up</span></a>
+            </div>
+        </nav>
+        <nav class="nav2" id="nav">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../About Us/index.html">About Us</a></li>
+                
+                <li><a href="#" class="activeLink">Buy Items</a></li>
+                <li><a href="../Contact Us/index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="banner">
+        <h1>Item Types</h1>
+        <div class="proitems">
+            <div class="sect">
+                <div class="proitem">
+                    <img src="../../Images/dressicon.png">
+                    <h2>Dresses</h2>
+                    <p>Eco-friendly</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/skin care3.webp">
+                    <h2>Skin Care</h2>
+                    <p>Organic</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/cosmo2.png">
+                    <h2>Cosmetics</h2>
+                    <p>Organic</p>
+                </div>
+                
+            </div>
+            <p id="m">More</p>
+            <div class="sect" id="more1">
+                <div class="proitem">
+                    <img src="../../Images/cosmo8.png">
+                    <h2>Jewellery</h2>
+                    <p>Eco-friendly</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/icon5.png">
+                    <h2>Wedding Dress</h2>
+                    <p>Eco-friendly</p>
+                </div>
+                <div class="proitem">
+                    <img src="../../Images/icon7.png">
+                    <h2>Ethnic Wear</h2>
+                    <p>Eco-friendly</p>
+                </div>
+                
+            </div>
+        </div>
+        <h1>Our Items</h1>
+        <div class="portfolio">
+            <div class="filterBtns" id="filterBtns">
+                <button class="btn active" data-filter="all">All</button>
+                <button class="btn" data-filter="cars">Dress</button>
+                <button class="btn" data-filter="furniture">Ethnic Wear</button>
+                <button class="btn" data-filter="toys">Cosmetics</button>
+                <button class="btn" data-filter="jewellery">Jewellery</button>
+            </div>
+            <div class="images">
+                <div class="pics">
+                    <div class="pic" data-item="furniture">
+                        <img src="../../Images/pic30.jpg">
+                        <div class="txt">
+                            <h2>Ethnic Wear</h2>
+                            <p>Eco-friendly ethnic wear combines traditional style with sustainable fabrics and practices, promoting both cultural heritage and environmental responsibility.
+                            </p>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="toys">
+                        <img src="../../Images/cos.webp">
+                        <div class="txt">
+                            <h2>Cosmetics</h2>
+                            <p>Eco-friendly cosmetics use natural ingredients and sustainable packaging to enhance beauty while caring for the environment.</p>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="cars">
+                        <img src="../../Images/dress21.jpg">
+                        <div class="txt">
+                            <h2>Dresses</h2>
+                            <p>Eco-friendly dresses are crafted from sustainable fabrics and eco-conscious practices, offering stylish choices that reduce environmental impact.</p>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pics">
+                    <div class="pic" data-item="jewellery">
+                        <img src="../../Images/pic12.jpg">
+                        <div class="txt">
+                            <h2>Jewellery</h2>
+                            <p>Eco-friendly jewelry features responsibly sourced materials and ethical practices, creating beautiful pieces with minimal environmental impact.</p>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                    <div class="pic" data-item="toys">
+                        <img src="../../Images/pic9.avif">
+                        <div class="txt">
+                            <h2>Skin Care</h2>
+                            <p>Eco-friendly skincare uses natural ingredients and sustainable packaging to nourish your skin while protecting the planet.</p>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+        <footer>
+                <div class="sect1">
+                    <span>
+                        <img src="../../Images/logo2.avif">
+                        <h3>Myntra</h3>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Skin Care</a></li>
+                            <li><a href="#">Lispstick</a></li>
+                            <li><a href="#">Nail Polish</a></li>
+                            <li><a href="#">Skirts</a></li>
+                            <li><a href="#">Ethnic Wear</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sales</a></li>
+                            
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <hr>
+                <div class="sect2">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>&copy;Copyright. All rights reserved By <span>Janya Jaiswal</span></p>
+                </div>
+            </footer>
+        
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wSY6nDCSAtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
